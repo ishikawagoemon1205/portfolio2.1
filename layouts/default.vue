@@ -1,7 +1,15 @@
 <script setup lang="ts">
-import type { NavItemProperties } from '~/interface';
+import type { NavItemProperties } from './interface.ts';
 
 const { $gsap , $ScrollTrigger } = useNuxtApp();
+
+
+useHead({
+  title: 'ブログ画面',
+  meta: [
+    { name: 'fwefrfr', content: 'Nuxt 3' }
+  ]
+});
 
 // -----
 // gsap
